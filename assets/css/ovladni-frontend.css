@@ -1,0 +1,129 @@
+/* Off-canvas navigace
+* ========================= */
+
+.wrap {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.wrap.active {
+  left: 14em;
+}
+a.side-menu-link {
+  float: left;
+  display: block;
+  padding: 1em;
+}
+
+@media screen and (max-width: 48.063em) {
+  .js .oc {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: -14em;
+  }
+}
+
+@media screen and (min-width: 48.25em) {
+  a.side-menu-link {
+    display: none;
+  }
+  .wrap.active {
+    left: 0;
+  }
+}
+
+
+/* Seznam produktu
+* ========================= */
+
+.product {
+  float: left;
+  width: 28.125%; /* 270/960*100 */
+  margin: 0 3.125% 20px 0; /* 30/960*100 */
+  padding: 20px 1.5625%; /* 15/960*100 */
+  height: 350px;
+  background: #ddd;
+}
+
+.row-fluid .product:last-child {
+	margin-right: 0;	
+}
+
+.product h3,
+.product p {
+  margin: 10px 0;
+  padding: 0;
+}
+.product h3 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+@media (max-width: 600px) {
+  .product {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    height: auto;
+  }
+  .product img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Seznam vyhod
+* ========================= */
+.why {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.why li {
+  list-style-type: none;
+  background: #ddd;
+  float: left;
+  height: 55px;
+  margin: 0 1% 20px 0;
+  padding: 10px 1%;
+  width: 30%;
+  /* Celkem 33% */
+}
+
+
+/* Hero-unit
+* ========================= */
+.hero-unit {
+  text-align: center;
+}
+.hero-unit h1 {
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+
+@media (min-width:500px) and (max-width:650px) {
+	.hero-unit h1 {
+		padding-left: 50px;
+		padding-right: 50px;		
+	}
+}
+
+@media (max-width:499px) {
+	.hero-unit {
+		padding-top: 30px;
+		padding-bottom: 30px;		
+	}	
+	.hero-unit h1 {
+	    font-size: 1.3em;
+	}
+	.hero-unit p {
+	    font-size: 1em;
+	    line-height: 1em;	
+	}		
+}	
